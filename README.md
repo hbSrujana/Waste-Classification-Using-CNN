@@ -87,7 +87,7 @@ The trained model can classify images into two categories.
   - Used predict_fun() to classify test images.
 
 - **Streamlit Application**:
-  - Developed WasteClassify.py using Streamlit for an interactive web-based waste classification system.
+  - Developed Waste_Classification.py using Streamlit for an interactive web-based waste classification system.
  - Users can upload images, and the model will predict whether the waste is Recyclable or Organic.
 
 ## Results & Observations
