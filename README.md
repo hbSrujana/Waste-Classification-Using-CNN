@@ -35,7 +35,7 @@ In Week 2, we focused on building a CNN model using TensorFlow and Keras to clas
 - **Model Architecture**:
   - Three convolutional layers with ReLU activation and max-pooling.
   - Fully connected layers with dropout for regularization.
-  - Final output layer using sigmoid activation for binary classification.
+  - Final output layer using softmax activation for binary classification.
 
 - **Training Process**:
   - Compiled the model using Adam optimizer and binary cross-entropy loss.
@@ -53,7 +53,7 @@ In Week 2, we focused on building a CNN model using TensorFlow and Keras to clas
   - Flatten layer
   - Fully Connected Layer (256 neurons, ReLU, Dropout 0.5)
   - Fully Connected Layer (64 neurons, ReLU, Dropout 0.5)
-  - Output Layer (2 neurons, Sigmoid activation for binary classification)
+  - Output Layer (2 neurons, softmax activation for binary classification)
 
 ## Training Details
 - **Loss Function**: Binary Cross-Entropy
