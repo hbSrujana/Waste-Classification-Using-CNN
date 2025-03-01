@@ -1,9 +1,6 @@
 # Week1
 Plastic Waste Classification using CNN: Week 1 work for the Edunet-Shell Skills4Future AICTE Internship, including dataset download, preprocessing, and label visualization to classify plastic waste into organic and recyclable categories.
 
-## About the Project
-This project aims to use AI and green skills to address the critical issue of plastic waste management.
-
 ### Dataset
 The `dataset` folder contains two subfolders:  
 - **TRAIN**: For training the model.  
