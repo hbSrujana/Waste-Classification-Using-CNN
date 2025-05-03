@@ -1,94 +1,80 @@
-# Week1
-Plastic Waste Classification using CNN: Week 1 work for the Edunet-Shell Skills4Future AICTE Internship, including dataset download, preprocessing, and label visualization to classify plastic waste into organic and recyclable categories.
+# ♻️ Plastic Waste Classification using CNN
 
-### Dataset
-The `dataset` folder contains two subfolders:  
-- **TRAIN**: For training the model.  
-- **TEST**: For testing the model.
-
-### Tools and Libraries
-- Python  
-- TensorFlow and Keras  
-- OpenCV for image processing  
-- Matplotlib for visualization  
-- Pandas for data handling  
-
-## Week 1 Work
-- Downloaded the dataset and organized it into `TRAIN` and `TEST` folders.  
-- Created the file `waste_classification.ipynb` for model development.  
-- Preprocessed the dataset:
-  - Loaded images using OpenCV and converted them to RGB format.  
-  - Created a DataFrame with images and their respective labels.  
-  - Visualized label distribution using pie charts.
-    
----
-
-## Week 2 - Convolutional Neural Network (CNN) for Image Classification
-In Week 2, we focused on building a CNN model using TensorFlow and Keras to classify images. The dataset consists of labeled images, and we performed data preprocessing, model training, and evaluation.
-
-## Implemented Features
-- **Data Preprocessing**: Used ImageDataGenerator to rescale images and load them from directories.
-
-- **Model Architecture**:
-  - Three convolutional layers with ReLU activation and max-pooling.
-  - Fully connected layers with dropout for regularization.
-  - Final output layer using softmax activation for binary classification.
-
-- **Training Process**:
-  - Compiled the model using Adam optimizer and binary cross-entropy loss.
-  - Trained for 15 epochs with a batch size of 64.
-  - Validated performance using a test dataset.
-
-- **Visualization**:
-  Randomly displayed sample images with their corresponding labels.
-  
-## Model Architectre
-  The model consists of the following layers:
-  - Conv2D (32 filters, 3x3 kernel, ReLU activation, MaxPooling)
-  - Conv2D (64 filters, 3x3 kernel, ReLU activation, MaxPooling)
-  - Conv2D (128 filters, 3x3 kernel, ReLU activation, MaxPooling)
-  - Flatten layer
-  - Fully Connected Layer (256 neurons, ReLU, Dropout 0.5)
-  - Fully Connected Layer (64 neurons, ReLU, Dropout 0.5)
-  - Output Layer (2 neurons, softmax activation for binary classification)
-
-## Training Details
-- **Loss Function**: Binary Cross-Entropy
-- **Optimizer**: Adam
-- **Metrics**: Accuracy
-- **Batch Size**: 64
-- **Epochs**: 15
-- **Data Augmentation**: Rescaling of pixel values
-
-## Results
-Model training was successfully completed with validation on the test dataset.
-The trained model can classify images into two categories.
+### 📌 Edunet-Shell Skills4Future AICTE Internship Project
 
 ---
 
-# Week3
-  In Week 3 of my internship, I worked on evaluating the performance of our CNN model, implementing a prediction function for waste classification, and integrating a Streamlit-based web application for real-time classification. The model is trained to classify images into Recyclable or Organic Waste.
-  
-## Implemented Features
-- **Performance Visualization**:
-  - Plotted training vs validation accuracy.
-  - Plotted training vs validation loss.
+## 🎯 Project Aim
 
-- **Prediction Function**:
-  - Implemented predict_fun(img) to classify images as either Recyclable or Organic Waste.
-  - Uses OpenCV for image loading and preprocessing.
-  - Utilizes the trained CNN model for classification.
+The aim of this project is to build a **deep learning-based image classification system** using **Convolutional Neural Networks (CNN)** that automatically classifies plastic waste into two categories: **Recyclable** and **Organic**.  
+It also includes a **Streamlit web app** for real-time waste classification, promoting automated waste segregation and environmental awareness.
 
-- **Testing the Model**:
-  - Loaded test images from the dataset.
-  - Used predict_fun() to classify test images.
+---
 
-- **Streamlit Application**:
-  - Developed Waste_classification.py using Streamlit for an interactive web-based waste classification system.
- - Users can upload images, and the model will predict whether the waste is Recyclable or Organic.
+## 🗂️ Dataset
 
-## Results & Observations
-- he model performs well in classifying waste categories.
-- The loss and accuracy plots indicate training stability.
-- Some misclassifications suggest further tuning is required.
-- The Streamlit application provides an easy-to-use interface for real-time classification.
+The dataset consists of labeled images organized into the following folders:
+- **TRAIN/** – Images used for training the model.
+- **TEST/** – Images used for testing and evaluation.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Programming Language**: Python  
+- **Libraries & Frameworks**:
+  - TensorFlow & Keras (for model building)
+  - OpenCV (for image processing)
+  - Pandas (for data handling)
+  - Matplotlib (for data visualization)
+  - Streamlit (for building the web app)
+
+---
+
+## 📅 Weekly Progress
+
+### ✅ Week 1: Dataset Preparation
+- Downloaded and organized dataset into `TRAIN/` and `TEST/` folders.
+- Preprocessed images using OpenCV and converted them to RGB format.
+- Created a DataFrame containing image data and corresponding labels.
+- Visualized label distribution using pie charts.
+- Created `waste_classification.ipynb` notebook for development.
+
+---
+
+### ✅ Week 2: CNN Model Development
+- Built a CNN model with the following architecture:
+  - **Conv2D (32, 64, 128 filters)** → ReLU → MaxPooling
+  - **Flatten** → Dense(256) → Dropout(0.5) → Dense(64) → Dropout(0.5)
+  - **Output Layer**: Dense(2) with softmax activation
+- Compiled using:
+  - **Loss Function**: Binary Cross-Entropy
+  - **Optimizer**: Adam
+  - **Metrics**: Accuracy
+- Trained the model for **15 epochs** with **batch size 64**
+- Visualized training and validation accuracy/loss
+
+---
+
+### ✅ Week 3: Evaluation & Deployment
+- Implemented `predict_fun(img)` for classifying uploaded images.
+- Evaluated model using test images and accuracy plots.
+- Developed a **Streamlit web app (`Waste_classification.py`)**:
+  - Users can upload an image.
+  - App displays prediction: **Recyclable** or **Organic**.
+
+---
+
+## 📊 Results & Observations
+
+- The model shows good performance and stable training curves.
+- Loss and accuracy plots indicate minimal overfitting.
+- Some misclassifications suggest scope for fine-tuning.
+- Streamlit app provides an interactive and easy-to-use interface.
+
+---
+
+## 🚀 How to Run the App
+
+1. Clone the repository.
+2. Install dependencies using:
