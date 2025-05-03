@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Project Aim
+## ## Description
 
 The aim of this project is to build a **deep learning-based image classification system** using **Convolutional Neural Networks (CNN)** that automatically classifies plastic waste into two categories: **Recyclable** and **Organic**.  
 It also includes a **Streamlit web app** for real-time waste classification, promoting automated waste segregation and environmental awareness.
