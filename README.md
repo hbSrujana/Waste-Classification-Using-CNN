@@ -76,3 +76,7 @@ Each image is labeled as either **Recyclable** or **Organic**.
 
 - The model performs well with stable accuracy and loss.
 - The Streamlit app provides a user-friendly interface for real-time waste classification.
+
+![Waste classification result](results/Result.png)
+
+![Waste classification result 1](results/Result1.png)
