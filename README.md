@@ -1,4 +1,4 @@
-# ♻️ Plastic Waste Classification using CNN
+# ♻️ Waste Classification using CNN
 
 ### 📌 Edunet-Shell Skills4Future AICTE Internship Project
 
